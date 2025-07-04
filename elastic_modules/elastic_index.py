@@ -2,7 +2,7 @@ from elasticsearch import Elasticsearch
 
 es = Elasticsearch(
     "http://localhost:9201",
-    headers={"X-Elastic-Product": "Elasticsearch"}
+    headers={"Accept": "application/vnd.elasticsearch+json; compatible-with=8"}
 )
 
 INDEX_NAME = "properties"
